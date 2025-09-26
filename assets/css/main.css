@@ -669,6 +669,7 @@ h6 {
 .footer .social-links a:hover {
   color: var(--contrast-color);
   background-color: var(--accent-color);
+  
 }
 
 .footer h4 {
