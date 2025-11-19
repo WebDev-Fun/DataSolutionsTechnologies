@@ -220,16 +220,22 @@ h6 {
 
 
 /* ===== Logo Styling Fix ===== */
+#logo{
+ max-height: 54px;   
+  margin-right: 10px;
+
+}
+
 .logo {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-
+/* 
 .logo img {
-  max-height: 40px;   /* Desktop ke liye image size */
-  margin-right: 10px; /* Image aur text ke beech gap */
-}
+  max-height: 200px;  
+  margin-right: 10px;
+} */
 
 .logo-div {
   line-height: 1.2;   /* Text line spacing */
@@ -251,11 +257,12 @@ h6 {
 
 /* ===== Mobile view ke liye adjustments ===== */
 @media (max-width: 576px) {
-  .logo img {
-    max-height: 30px;  /* Mobile me image chhoti */
+  #logo {
+    max-height: 40px;  /* Mobile me image chhoti */
+
   }
   .logo-div .sitename {
-    font-size: 16px;   /* Mobile ke liye font size chhota */
+    font-size: 5px;   /* Mobile ke liye font size chhota */
   }
   .logo-div .logo-sub {
     font-size: 10px;   /* Sub text aur chhota */
