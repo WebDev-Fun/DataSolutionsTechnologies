@@ -161,12 +161,6 @@ h6 {
   margin-right: 8px;
 }
 
-.header .logo h1 {
-  font-size: 20px;
-  margin: 0;
-  font-weight: 700;
-  color: var(--heading-color);
-}
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
@@ -221,7 +215,7 @@ h6 {
 
 /* ===== Logo Styling Fix ===== */
 #logo{
- max-height: 54px;   
+ max-height: 57px;   
   margin-right: 10px;
 
 }
@@ -231,41 +225,60 @@ h6 {
   align-items: center;
   text-decoration: none;
 }
-/* 
-.logo img {
-  max-height: 200px;  
-  margin-right: 10px;
-} */
+
 
 .logo-div {
-  line-height: 1.2;   /* Text line spacing */
+  line-height: 1.2;  
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
 }
 
 .logo-div .sitename {
-  font-size: 20px;    /* Desktop ke liye font size */
-  font-weight: 700;
+  font-size: 1.3em;   
+  font-weight: 800;
   margin: 0;
   color: var(--heading-color);
+  margin-top: 5px;
 }
+/* .logo-div .sitename {
+  font-size: 1.2em;   
+  font-weight: 800;
+  margin: 0;
+  color: var(--heading-color);
+  margin-top: 5px;
+}
+ */
 
 .logo-div .logo-sub {
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 1em;
+  font-weight: 700;
   margin: 0;
   color: var(--nav-hover-color);
 }
 
+/* .logo-div .logo-sub {
+  font-size: 0.9em;
+  font-weight: 700;
+  margin: 0;
+  color: var(--nav-hover-color);
+} */
+
 /* ===== Mobile view ke liye adjustments ===== */
 @media (max-width: 576px) {
   #logo {
-    max-height: 40px;  /* Mobile me image chhoti */
+    max-height: 40px;
+    margin-right:5px;  
 
   }
   .logo-div .sitename {
-    font-size: 5px;   /* Mobile ke liye font size chhota */
+    font-size: 0.8em;
+     font-weight: 800;  
   }
   .logo-div .logo-sub {
-    font-size: 10px;   /* Sub text aur chhota */
+    font-size: 10px;   
   }
 
     .btn-getstarted {
@@ -273,6 +286,21 @@ h6 {
   }
 }
 
+@media (min-width:768px) and (max-width:991px) {
+  #logo{
+     max-height: 50px;
+    margin-right: 3px;
+  }
+
+   .logo-div .sitename {
+    font-size: 1.1em;
+     font-weight: 800;  
+  }
+
+  .logo-div .logo-sub {
+    font-size: 0.8em;   
+  }
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -510,9 +538,7 @@ h6 {
     display: block;
   }
 
-  .sitename{
-    height: 5vh;
-  }
+
 }
 
 /* Listing Dropdown - Desktop */
@@ -739,6 +765,7 @@ h6 {
 }
 
 @media (max-width: 767px) {
+
   .footer-main .row > div {
     flex: 0 0 100%;
     max-width: 100%;
@@ -1055,19 +1082,7 @@ section,
   }
 }
 
-.logo-div{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-.sitename{
-  height: 1em;
-}
 
-.logo-sub{
-  color: #00fbfb;
-}
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
